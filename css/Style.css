@@ -1,0 +1,70 @@
+/*div, head, nav, aside, main, footer, h1, h2, h3, h4, p, a, form, input, button, ul, li{
+    border: solid black 1px;
+    }*/
+:root {
+    --dalk:#283031;
+    --blowm:#726454;
+    --gley:#80877b;
+    --gleem:#496749;
+    --brue:#84aead;
+}
+
+body{
+    background: var(--brue);
+    color: var(--dalk);
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    height: 40px
+}
+input{
+    text-align: center;
+    background: var(--brue);
+    font-weight: 600;
+}
+
+.btn-primary.focus, .btn-primary{
+    background: var(--blowm);
+    border: inset 3px var(--gley);
+    border-radius: 0;
+}
+.btn-primary.focus, .btn-primary:hover{
+    background: var(--gleem);
+    border: inset 3px var(--gley);
+}
+.btn-primary.focus, .btn-primary:focus{
+    background: var(--dalk);
+    border: inset 3px var(--gley);
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle:active{
+    background: var(--dalk);
+    border: inset 3px var(--gley);
+}
+
+#game {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin: 0;
+    background: var(--gley);
+    border: outset 25px var(--blowm);
+    padding:50px;
+}
+#colortest{
+    border: solid 5px;
+    border-left-color: var(--dalk);
+    border-top-color: var(--blowm);
+    border-right-color: var(--gley);
+    border-bottom-color: var(--gleem);
+    background: var(--brue);
+}
+
+#gameRun {
+    display:none;
+}
+#attempts {
+    font-size: 14px;
+    font-weight: 800;
+}
